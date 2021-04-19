@@ -123,9 +123,6 @@ const Education = () => {
 
 const Wrapper = styled.div`
   margin-top: 60px;
-  @media (max-width: 500px) {
-    text-align: left !important;
-  }
 `;
 
 const Header = styled.h2`
