@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const education = [
   {
-    degree: "Online Executive Education Program | In Progress",
+    degree: "Online Executive Education Program - Certificate | 2021",
     program: "Digital Marketing Fundamentals",
     school: "IMD Business School",
   },

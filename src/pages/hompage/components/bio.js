@@ -6,8 +6,7 @@ const Bio = () => {
     <>
       <Wrapper>
         <Strong>
-          Bringing marketing strategy, technology, and content creation
-          together.
+          Bringing digital marketing, technology, and content creation together.
         </Strong>{" "}
         My business education and thorough understanding of web technologies
         enable me to{" "}
