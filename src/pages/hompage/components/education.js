@@ -36,6 +36,14 @@ const education = [
     programLowercase: " | “Mention: Très Bien”",
     school: "Lycée Français de Zürich",
   },
+  {
+    degree: "Google Skillshop certificates | 2021",
+    list: [
+      "Google Ads Display Certification",
+      "Google Analytics Beginner Course",
+      "Google Analytics Advanced Course",
+    ],
+  },
 ];
 
 const Education = () => {
@@ -44,6 +52,17 @@ const Education = () => {
       <Wrapper>
         <Header>Education</Header>
         <Main>
+          <DegreeWrapper className="GOOGLE">
+            <Degree>{education[4].degree}</Degree>
+            <SchoolWrapper>
+              <LeftBar></LeftBar>
+              <ContentRight>
+                {education[4].list.map((item, index) => {
+                  return <List key={index}>{item}</List>;
+                })}
+              </ContentRight>
+            </SchoolWrapper>
+          </DegreeWrapper>
           <DegreeWrapper className="IMD">
             <Degree>{education[0].degree}</Degree>
             <SchoolWrapper>

@@ -44,10 +44,10 @@ const workExp = [
       {
         title: "VP Marketing | 2017 - 2018 | Montreal, Canada | Volunteering",
         description: [
-          "Created designs for social media promotion",
-          "Handled social media marketing campaigns (Facebook Ads, Instagram)",
-          "Respected a schedule to deliver content and posts",
-          "Took photos and videos for the promotion of the club",
+          "Created content for marketing campaigns (Photos, Videos, Text, Designs, and Newsletters)",
+          "Handled marketing campaigns on various channels (Facebook, Instagram, Website, Newsletter, and Google Ads)",
+          "Organized schedule for posting the campaigns",
+          "Used analytics to evaluate the impact of the campaigns and improve them",
         ],
       },
     ],
