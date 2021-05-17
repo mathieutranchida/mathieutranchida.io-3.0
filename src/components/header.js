@@ -13,7 +13,7 @@ const Header = () => {
           <div>
             <Name>Mathieu Tranchida</Name>
             <SecondLine>
-              Digital Marketer{" "}
+              Interested in Marketing{" "}
               <SecondLineSpan>
                 | Eligible to work in Canada and Europe
               </SecondLineSpan>

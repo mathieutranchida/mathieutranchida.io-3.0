@@ -14,7 +14,7 @@ const Homepage = () => {
       <Wrapper>
         <Main>
           <Header />
-          <Bio />
+          {/* <Bio /> */}
           <WorkExperience />
           <Education />
           <Skills />
