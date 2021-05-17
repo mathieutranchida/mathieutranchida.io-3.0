@@ -5,22 +5,12 @@ const Bio = () => {
   return (
     <>
       <Wrapper>
-        <Strong>
-          Bringing digital marketing, technology, and content creation together.
-        </Strong>{" "}
-        My business education and thorough understanding of web technologies
-        enable me to{" "}
-        <Strong>
-          adapt marketing strategies to the digital needs and achieve their full
-          potential
-        </Strong>
-        . Having created content and developed websites for years,{" "}
-        <Strong>
-          I understand the challenges and limitations driving the web
-        </Strong>
-        , allowing me to{" "}
-        <Strong>communicate with developers and other creators</Strong>. Looking
-        for a full-time position.
+        My objective is to contribute to the execution of digital marketing
+        initiatives to drive business results. Eager to work on marketing
+        automation, web platform optimization, content creation, and customer
+        engagement through digital touchpoints. My business education and
+        thorough understanding of web technologies are strong assets to
+        translate business goals into successful marketing campaigns.
       </Wrapper>
     </>
   );

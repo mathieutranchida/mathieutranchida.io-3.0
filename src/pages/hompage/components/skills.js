@@ -21,11 +21,6 @@ const skills = [
     content:
       " Photography, Video Production, Web Design, Web Development, Social Media Graphic Design",
   },
-  {
-    list: "Passions:",
-    content:
-      " Skiing, Climbing, Biking, Outdoors, Video Games, Music, Photography, Movies, Web Development",
-  },
 ];
 
 const Skills = () => {
@@ -42,8 +37,6 @@ const Skills = () => {
           <ListItem>{skills[2].content}</ListItem>
           <ListType>{skills[3].list}</ListType>
           <ListItem>{skills[3].content}</ListItem>
-          <ListType>{skills[4].list}</ListType>
-          <ListItem>{skills[4].content}</ListItem>
         </Main>
       </Wrapper>
     </>

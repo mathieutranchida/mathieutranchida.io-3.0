@@ -26,28 +26,41 @@ const workExp = [
     ],
   },
   {
+    company: "GFS Summer Camp",
+    jobs: [
+      {
+        title:
+          "Marketing Assistant & Content Creation | Summer 2017 & Summer 2018 | Tignes, France | Full-time",
+        description: [
+          "Produced content for social media marketing campaigns including videos, photos, and designs",
+          "Planned social media schedule and post content on multiple platforms",
+          "Used Facebook and Instagram ads for promotion",
+        ],
+      },
+    ],
+  },
+  {
     company: "Concordia Ski & Snowboard Club",
     jobs: [
       {
         title: "President | 2018 - 2019 | Montreal, Canada | Volunteering",
         description: [
-          "Ran one of the most active club on campus with more than 500 active members",
-          "Planned and ran over 20 yearly events (including ten one-day trips and two weekenders)",
-          "Generated over $90,000 in sales throughout the year",
+          "Ran one of the most active clubs on campus with more than 500 active members",
+          "Planned and ran over 20 yearly events (ten one-day trips and two weekenders)",
           "Managed a team of six people",
           "Developed leadership and teamwork skills",
           "Worked with external companies such as Red Bull and Orage",
           "Oversaw the finance and marketing of the club",
-          "Collaborated with other school associations.",
+          "Collaborated with other school associations",
         ],
       },
       {
         title: "VP Marketing | 2017 - 2018 | Montreal, Canada | Volunteering",
         description: [
           "Created content for marketing campaigns (Photos, Videos, Text, Designs, and Newsletters)",
-          "Handled marketing campaigns on various channels (Facebook, Instagram, Website, Newsletter, and Google Ads)",
+          "Handled marketing campaigns on various channels (Facebook, Instagram, Website, Mailchimp, and Google Ads)",
           "Organized schedule for posting the campaigns",
-          "Used analytics to evaluate the impact of the campaigns and improve them",
+          "Used analytics to evaluate and improve the performance of marketing campaigns",
         ],
       },
     ],
@@ -58,25 +71,14 @@ const workExp = [
       {
         title: "Web Development",
         link: "/web-development",
-        description: [
-          "At the end of my bachelor’s degree, I had realized the importance of the web and decided to study more about it. My biggest motivation was to understand how the web works to face its realities, limits, technologies, and trends. Another key takeaway is the ability to speak the language of developers and understand the challenges they face.",
-          "As a developer, I created:",
-        ],
-        list: [
-          "An e-commerce website (Full-Stack | React, Redux, JavaScript, Node.js, MongoDB, Stripe)",
-          "A Twitter clone (Full-Stack | React, Redux, JavaScript, Node.js)",
-          "An airline reservation system (Full-Stack | React, Redux, JavaScript, Node.js)",
-          "A video game (Frontend | HTML, CSS, JavaScript)",
-          "A podcast website (WordPress)",
-        ],
+        description:
+          "Early on, I realized the importance of digital technologies in marketing. Upon graduating from my bachelor's, I decided to learn more about digital and begun a web development program. My greatest motivation was to fully understand the realities, limits, and trends driving the web. Another key takeaway emerging out of this experience is speaking the language of developers and understanding the challenges they face. As a developer, I created an e-commerce website, a Twitter clone, an airline reservation system, and a small video game.",
       },
       {
         title: "Photography",
         link: "/photography",
-        description: [
-          "On the side of my studies, I started to take some projects as a photographer. I have done photoshoots for clothing lines, fashion shows, events, movies, and sporting events. These experiences gave me a lot of insights into what goes on behind the scenes. I had the chance to work with producers, movie directors, graphic designers, and filmmakers, amongst others; Allowing me to understand what they do, what they charge, and how they operate. Today, photography is a passion and a hobby on the side of my main activity.",
-          "Some of the people I worked with are: Arc’teryx, Allez-Up, Jackalope, Psicobloc, L’Équipe, Gripped, CBC, RDS, and more...",
-        ],
+        description:
+          "Photography is one of my hobbies and I occasionally work on “professional” projects. Over the years, I have had the chance to develop a great network of creators in Montreal and understand what goes on behind-the-scenes of photoshoots, movies, events, and more. Photography has given me the chance to develop my creative thinking skills, work ethic, and professionalism. Find some of my work on Instagram (@mathieutranchida).",
       },
     ],
   },
@@ -86,7 +88,7 @@ const WorkExperience = () => {
   return (
     <>
       <Wrapper>
-        <Header>Work Experience</Header>
+        <Header>Work Experience (while studying)</Header>
         <Main>
           <ExpWrapper className="Arcteryx">
             <JobCompany>{workExp[0].company}</JobCompany>
@@ -116,7 +118,7 @@ const WorkExperience = () => {
               </ContentRight>
             </JobWrapper>
           </ExpWrapper>
-          <ExpWrapper className="CSSC">
+          <ExpWrapper className="GFS">
             <JobCompany>{workExp[1].company}</JobCompany>
             <JobWrapper>
               <LeftBar></LeftBar>
@@ -131,8 +133,26 @@ const WorkExperience = () => {
                     </>
                   );
                 })}
-                <JobTitle>{workExp[1].jobs[1].title}</JobTitle>
-                {workExp[1].jobs[1].description.map((item, index) => {
+              </ContentRight>
+            </JobWrapper>
+          </ExpWrapper>
+          <ExpWrapper className="CSSC">
+            <JobCompany>{workExp[2].company}</JobCompany>
+            <JobWrapper>
+              <LeftBar></LeftBar>
+              <ContentRight>
+                <JobTitle>{workExp[2].jobs[0].title}</JobTitle>
+                {workExp[2].jobs[0].description.map((item, index) => {
+                  return (
+                    <>
+                      <div key={index}>
+                        <JobDescription>{item}</JobDescription>
+                      </div>
+                    </>
+                  );
+                })}
+                <JobTitle>{workExp[2].jobs[1].title}</JobTitle>
+                {workExp[2].jobs[1].description.map((item, index) => {
                   return (
                     <>
                       <div key={index}>
@@ -145,50 +165,28 @@ const WorkExperience = () => {
             </JobWrapper>
           </ExpWrapper>
           <ExpWrapper className="extra">
-            <JobCompany>{workExp[2].company}</JobCompany>
+            <JobCompany>{workExp[3].company}</JobCompany>
             <JobWrapper>
               <LeftBar></LeftBar>
               <ContentRight>
                 <ExtraHeader>
                   <JobTitleNoMargin>
-                    {workExp[2].jobs[0].title}
+                    {workExp[3].jobs[0].title}
                   </JobTitleNoMargin>
                   |<Link to="/web-development">See portfolio</Link>
                 </ExtraHeader>
                 <JobDescription>
-                  {workExp[2].jobs[0].description[0]}
+                  {workExp[3].jobs[0].description}
                 </JobDescription>
-                <JobDescriptionExtra>
-                  {workExp[2].jobs[0].description[1]}
-                </JobDescriptionExtra>
-                <div style={{ marginTop: "5px" }}>
-                  <JobWrapper>
-                    <LeftBar></LeftBar>
-                    <ContentRight>
-                      {workExp[2].jobs[0].list.map((item, index) => {
-                        return (
-                          <>
-                            <div key={index}>
-                              <ListItem>{item}</ListItem>
-                            </div>
-                          </>
-                        );
-                      })}
-                    </ContentRight>
-                  </JobWrapper>
-                </div>{" "}
                 <ExtraHeader style={{ marginTop: "20px" }}>
                   <JobTitleNoMargin>
-                    {workExp[2].jobs[1].title}
+                    {workExp[3].jobs[1].title}
                   </JobTitleNoMargin>
                   |<Link to="/photography">See portfolio</Link>
                 </ExtraHeader>
                 <JobDescription>
-                  {workExp[2].jobs[1].description[0]}
+                  {workExp[3].jobs[1].description}
                 </JobDescription>
-                <JobDescriptionExtra>
-                  {workExp[2].jobs[1].description[1]}
-                </JobDescriptionExtra>
               </ContentRight>
             </JobWrapper>
           </ExpWrapper>
@@ -250,6 +248,9 @@ const JobTitle = styled.p`
   font-weight: 500;
   :last-of-type {
     margin-top: 15px;
+  }
+  :first-of-type {
+    margin-top: 0px;
   }
 `;
 

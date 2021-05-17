@@ -6,6 +6,7 @@ import Bio from "./components/bio";
 import WorkExperience from "./components/work";
 import Education from "./components/education";
 import Skills from "./components/skills";
+import Hobbies from "./components/hobbies";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
           <WorkExperience />
           <Education />
           <Skills />
+          <Hobbies />
         </Main>
       </Wrapper>
     </>

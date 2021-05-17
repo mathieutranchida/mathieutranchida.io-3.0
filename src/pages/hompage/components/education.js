@@ -58,7 +58,7 @@ const Education = () => {
               <LeftBar></LeftBar>
               <ContentRight>
                 {education[4].list.map((item, index) => {
-                  return <List key={index}>{item}</List>;
+                  return <ListNoIndent key={index}>{item}</ListNoIndent>;
                 })}
               </ContentRight>
             </SchoolWrapper>
@@ -82,18 +82,13 @@ const Education = () => {
                 <div style={{ marginTop: "3px", marginBottom: "1px" }}>
                   <P>Coursework:</P>
                 </div>
-                <SchoolWrapper>
-                  <LeftBar></LeftBar>
-                  <ContentRight>
-                    {education[1].list.map((item, index) => {
-                      return (
-                        <div key={index}>
-                          <List>{item}</List>
-                        </div>
-                      );
-                    })}
-                  </ContentRight>
-                </SchoolWrapper>
+                {education[1].list.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <List>{item}</List>
+                    </div>
+                  );
+                })}
               </ContentRight>
             </SchoolWrapper>
           </DegreeWrapper>
@@ -107,18 +102,13 @@ const Education = () => {
                 <div style={{ marginTop: "3px", marginBottom: "1px" }}>
                   <P>Coursework:</P>
                 </div>
-                <SchoolWrapper>
-                  <LeftBar></LeftBar>
-                  <ContentRight>
-                    {education[2].list.map((item, index) => {
-                      return (
-                        <div key={index}>
-                          <List>{item}</List>
-                        </div>
-                      );
-                    })}
-                  </ContentRight>
-                </SchoolWrapper>
+                {education[2].list.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <List>{item}</List>
+                    </div>
+                  );
+                })}
               </ContentRight>
             </SchoolWrapper>
           </DegreeWrapper>
@@ -192,9 +182,15 @@ const P = styled.span`
   margin: 3px 0px;
 `;
 
+const ListNoIndent = styled.p`
+  font-weight: 300;
+  margin: 0px;
+`;
+
 const List = styled.p`
   font-weight: 300;
   margin: 0px;
+  margin-left: 20px;
 `;
 
 export default Education;
